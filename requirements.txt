@@ -1,4 +1,4 @@
 pyspark
 boto3
-
+hadoop-aws
 -e .
