@@ -31,6 +31,8 @@ development. Deployment package should be separate from the source code.
 
 This project is Spark-based data processing pipeline. The main Script 'pipeline.py', and transformations script 'transformations.py' module encapsulates the key data manipulation functions
 
+I created an AWS account and then created an S3 bucket called "ram-tast" and an IAM user for programmatic access. For this user, I generated an AWS access key ID and secret access key. I uploaded some feature data and store data into two objects within the "ram-tast" S3 bucket. Now there are two objects containing my feature and store data residing in my "ram-tast" S3 bucket in AWS that I can access programmatically using the IAM user credentials.
+
 ## Prerequisites
 - AWS Credentials
 
@@ -51,6 +53,23 @@ activate the vnev
 conda activate venv/ 
 
 ```
+- ### Installation:
+   Install the requireed python dependencies listed in "requirements.txt". You can do this by running the following command in your project directory.
+   
+```bash
+   pip install -r requirements.txt
 
+```
 
+- To setup the requirements file, Run this command will execute the all the required libraries
+```bash
+setup.py
+``` 
+
+## USAGE
+
+```bash
+python pipeline.py
+python transformations.py 
+```
 
