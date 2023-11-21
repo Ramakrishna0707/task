@@ -16,6 +16,7 @@ development. Deployment package should be separate from the source code.
 6. Write CICD Notes and Readme file to simulate pipeline in test environment
 
 ## Project Structure
+```bash
 
 ├── src/                  # Source code directory
 │   ├── pipeline.py       # Main Spark script
@@ -24,7 +25,7 @@ development. Deployment package should be separate from the source code.
 ├── data/                 # Directory for storing data files
 ├── README.md             # Project documentation
 ├── setup.py              # Script for packaging and distribution
-
+```
 
 ## Overview 
 
